@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styles from "../../styles/List.module.css";
 
 export const getStaticProps = async () => {
@@ -10,16 +11,21 @@ export const getStaticProps = async () => {
 
 const List = ({ lists }) => {
   return (
-    <div>
-      <h2>List Users</h2>
-      {lists.map((list) => (
-        <div key={list.id}>
-          <a className={styles.single}>
-            <h3>{list.name}</h3>
-          </a>
-        </div>
-      ))}
-    </div>
+    <>
+      <Head>
+        <title>My List</title>
+      </Head>
+      <div>
+        <h2>List Users</h2>
+        {lists.map((list) => (
+          <div key={list.id}>
+            <a className={styles.single}>
+              <h3>{list.name}</h3>
+            </a>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 

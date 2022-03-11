@@ -8,6 +8,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>My NextJs Project</title>
+      </Head>
       <div>
         <h1 className={styles.title}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
@@ -27,7 +30,7 @@ export default function Home() {
         </p>
       </div>
       <Link href="/list">
-        <a className={styles.btn }>List</a>
+        <a className={styles.btn}>List</a>
       </Link>
     </>
   );
