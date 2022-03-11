@@ -8,15 +8,26 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="">
-        aliquid necessitatibus consequatur? Modi eum quasi ut? Iste, corrupti
-        animi. Veritatis at ipsa ex pariatur sunt provident tempora similique.
-        Consequatur omnis ipsam vero nihil voluptate suscipit? Deserunt deleniti
-        quia et, commodi, laborum doloremque adipisci perspiciatis vel beatae,
-        molestiae magnam hic vitae temporibus.
+      <div>
+        <h1 className={styles.title}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          idem.
+        </h1>
+        <p className={styles.text}>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+          consequatur ea, est laboriosam excepturi nostrum perspiciatis nam
+          deserunt voluptas quam magni voluptatibus, sit nemo soluta, at magnam.
+          Repudiandae, ab. Quidem?
+        </p>
+        <p className={styles.text}>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+          consequatur ea, est laboriosam excepturi nostrum perspiciatis nam
+          deserunt voluptas quam magni voluptatibus, sit nemo soluta, at magnam.
+          Repudiandae, ab. Quidem?
+        </p>
       </div>
       <Link href="/list">
-        <a>List</a>
+        <a className={styles.btn }>List</a>
       </Link>
     </>
   );
